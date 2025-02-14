@@ -1,0 +1,135 @@
+/* Membership Section */
+.membership {
+    padding: 40px 0;
+    padding-top: 100px; /* Add top padding to avoid overlap with fixed header */
+}
+
+.membership-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membership-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+}
+
+.medal-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medal-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.membership-card h3 {
+    font-family: var(--font-serif);
+    color: var(--color5);
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    margin-bottom: 10px;
+}
+
+.membership-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.membership-card li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.membership-card button {
+    background-color: var(--color4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.membership-card button:hover {
+    background-color: var(--color3);
+}
+
+/* Application Section */
+.application {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#membership-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#membership-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+#membership-form input,
+#membership-form select,
+#membership-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#membership-form textarea {
+    resize: vertical;
+}
+
+#membership-form input[type="submit"] {
+    background-color: var(--color4);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#membership-form input[type="submit"]:hover {
+    background-color: var(--color3);
+}

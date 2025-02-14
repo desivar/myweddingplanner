@@ -1,0 +1,119 @@
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 600px; /* Adjust as needed */
+    overflow: hidden; /* Ensure image covers the section */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/weddingap.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero-content .cta-button { /* Target the specific button */
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgba(167, 119, 93, 0.8); /* Semi-transparent background color */
+    color: white; /* Keep the text color white */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove any default border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.hero-content .cta-button:hover {
+    background-color: rgba(151, 99, 73, 0.9); /* Slightly darker on hover */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+
+#about, #services, #portfolio, #testimonials, #blog-excerpts {
+    padding: 40px 0; /* Add vertical padding */
+}
+
+/* Glassmorphism Effect */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+#about {
+    padding: 40px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    gap: 40px; /* Space between image and text */
+}
+
+.about-image {
+    flex: 1; /* Image takes up available space */
+    text-align: center; /* Center the image */
+    order: 2; /* Key change: Image to the right */
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+    border: 15px solid #f0f0f0; /* Frame/border (adjust color) */
+    box-sizing: border-box; /* Include border in element's total width and height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.about-text {
+    flex: 1; /* Text takes up available space */
+    order: 1; /* Key change: Text to the left */
+}
+
+/* Button Container */
+.button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 40px; /* Add some space above the button */
+    margin-bottom: 60px;
+}
+
+/* Glass Button */
+.glass-button {
+    display: inline-block; /* Make the button behave like an inline element */
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 1.2em; /* Adjust font size as needed */
+    text-decoration: none; /* Remove underline from link */
+    color: #F4ACB7; /* Pink text color (adjust as needed) */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border: 2px solid #F4ACB7; /* Pink border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly less transparent on hover */
+    color: #9D8189; /* Darker pink color on hover */
+    border-color: #9D8189;
+}
+
+
+

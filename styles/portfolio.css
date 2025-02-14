@@ -1,0 +1,186 @@
+/* Body Styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0; /* Example */
+    padding: 20px 0;
+    position: relative; /* Or fixed if you want it to stay at the top */
+    z-index: 100; /* Ensure header is above other content */
+    width: 100%; /* Make sure header spans the entire width */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    width: 90%; /* Adjust as needed */
+    margin: 100px auto 20px; /* Top margin added to push content below header */
+    display: block;
+}
+
+/* Image Slider Styles */
+.image-slider {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    height: 600px; /* Set a specific height for the slider */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+/* Invitation/Timeline Styles */
+.invitation-timeline {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 40px auto; /* Increased margin for spacing */
+}
+
+/* Testimonial Styles */
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 40px auto; /* Increased margin for spacing */
+}
+
+.testimonial-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* common.css */
+
+/* ... (Your existing CSS styles) ... */
+
+/* Wedding Music Section Styles */
+#wedding-music {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif; /* Use your existing font */
+    width: 80%; /* Or adjust as needed */
+    margin: 20px auto; /* Center the music section */
+}
+
+#spotify-connect {
+    margin-bottom: 20px;
+    text-align: center; /* Center the button and status */
+}
+
+#connect-spotify {
+    padding: 10px 20px;
+    background-color: #1DB954; /* Spotify green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+#connect-spotify:hover {
+    background-color: #198c41; /* Darker green on hover */
+}
+
+#spotify-status {
+    margin-top: 10px;
+}
+
+
+#playlist-selection,
+#music-search,
+#create-playlist {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for sections */
+}
+
+#playlist-selection h3,
+#music-search h3,
+#create-playlist h3 {
+    margin-top: 0; /* Remove default h3 top margin */
+}
+
+#playlist-list,
+#selected-tracks,
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+#playlist-list li,
+#selected-tracks li,
+#search-results li {
+    cursor: pointer;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.2s ease; /* Add hover effect */
+}
+
+#playlist-list li:hover,
+#selected-tracks li:hover,
+#search-results li:hover {
+    background-color: #e0e0e0; /* Softer gray on hover */
+}
+
+/* Style for the search input */
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%; /* Adjust as needed */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+#search-button, #create-playlist-button {
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and button */
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover, #create-playlist-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px; /* Add top margin for spacing */
+}

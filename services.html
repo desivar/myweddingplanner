@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wedding Planner - French Country Style</title>
+    <meta name="description" content="Creating unforgettable weddings with a touch of French elegance.">
+    <meta name="keywords" content="wedding, planner, French, country, style, elegant, unforgettable">
+    <meta name="author" content="Desire Vargas">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="images/greenlogo3.png" alt="Your Logo">
+        </div>
+         <nav class="main-nav"> 
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/vendors.html">Vendors</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container"> 
+    <section class="membership">
+        <h1 class="title">Plan Levels </h1>
+        <div class="membership-display">
+            <div class="membership-card gold">
+                <div class="medal-container"> 🌸</div>
+                <h3>Gold </h3>
+                <p>Premium Benefits:</p>
+                <ul>
+                    <li>Full Wedding Planning</li>
+                    <li>Venue Selection</li>
+                    <li>Vendor Coordination</li>
+                    <li>Budget Management</li>
+                </ul>
+                <button class="learn-more" data-membership="gold">Learn More</button> 
+            </div>
+            
+            <div class="membership-card silver">
+                <div class="medal-container">🌸 </div>
+                <h3>Silver </h3>
+                <p>Standard Benefits:</p>
+                <ul>
+                    <li>Vendor Referrals</li>
+                    <li>Timeline Creation</li>
+                    <li>Free Bouquet</li>
+                    <li>Day-of Coordination</li>
+                </ul>
+                <button class="learn-more" data-membership="silver">Learn More</button>
+            </div>
+            
+            <div class="membership-card bronze">
+                <div class="medal-container"> 🌸</div>
+                <h3>Bronze </h3>
+                <p>Essential Benefits:</p>
+                <ul>
+                    <li>On-site Coordination</li>
+                    <li>Problem Solving</li>
+                    <li>Free Bouquet</li>
+                    <li>Vendor Liaison</li>
+                </ul>
+                <button class="learn-more" data-membership="bronze">Learn More</button>
+            </div>
+            </div>
+    </section>
+    <section class="application">
+        <h2 class="title">Plan Application</h2>
+        <form id="membership-form" action="/submit_form" method="POST">  <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="plan">Plan:</label>
+            <select id="plan" name="plan">
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+            </select>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <input type="submit" value="Submit Application">
+        </form>
+    </section>
+    
+</main> 
+
+    <footer>
+        <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+
+    </footer>
+
+    <dialog id="membership-info-modal">  
+        <p>Detailed information about the selected membership will go here.</p>
+        <button id="close-modal">Close</button>
+    </dialog>
+
+    <script src="/scripts/common.js"></script>
+</body>
+</html>

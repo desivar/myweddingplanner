@@ -1,0 +1,69 @@
+/* Basic Styles */
+:root {
+    --color1: #D8E2DC; /* Off-white/light beige */
+    --color2: #FFE5D9; /* Light peach/blush */
+    --color3: #FFCAD4; /* Light rose/pink */
+    --color4: #F4ACB7; /* Rose/pink */
+    --color5: #9D8189; /* Muted brown/taupe */
+    --font-serif: 'Playfair Display', serif; /* Example serif font */
+    --font-sans: 'Open Sans', sans-serif; /* Example sans-serif font */
+}
+
+body {
+    font-family: var(--font-sans);
+    margin: 0;
+    background-color: var(--color1); /* Overall background */
+    color: var(--color5); /* Main text color */
+}
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    padding: 20px 0;
+    position: fixed; /* Sticky header */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it's above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header {
+    height: 100px; /* Example - adjust as needed */
+    padding: 20px; /* Example - adjust as needed */
+}
+.logo img {
+    max-height: 100px;  /* Or some other value */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color5);
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: var(--color4);
+}

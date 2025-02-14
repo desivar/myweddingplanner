@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸Your Wedding Planner - French Country Style 🌸</title>
+    <meta name="description" content="Creating unforgettable weddings with a touch of French elegance.">
+    <meta name="keywords" content="wedding, planner, French, country, style, elegant, unforgettable">
+    <meta name="author" content="Desire Vargas">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <img src="images/greenlogo3.png" alt="Your Logo">
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/vendors.html">Vendors</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    
+    <main>
+        <div class="image-slider">
+            <img src="images/pinkglass2.jpg" alt="Wedding 1" class="active">
+            <img src="images/weddingros2.jpg" alt="Wedding 2">
+            <img src="images/favours2.jpg" alt="Wedding 3">
+            <img src="images/chandelier2.jpg" alt="Wedding 4">
+            <img src="images/cakew2.jpg" alt="Wedding 5">
+        </div>
+        <div class="invitation-timeline">
+            <div class="invitation">
+                <img src="images/weddinginv2.jpg" alt="Wedding Invitation">
+            </div>
+            <section id="wedding-music">
+                <h2>Choose Your Wedding Music</h2>
+            
+                <div id="spotify-connect">
+                  <button id="connect-spotify">Connect with Spotify</button>
+                  <p id="spotify-status">Not connected</p> </div>
+            
+                <div id="playlist-selection" style="display: none;">
+                  <h3>Your Spotify Playlists</h3>
+                  <ul id="playlist-list">
+                    </ul>
+            
+                  <h3>Selected Tracks</h3>
+                  <ul id="selected-tracks">
+                    </ul>
+                </div>
+            
+                <div id="music-search" style="display: none;">
+                    <h3>Search Music</h3>
+                    <input type="text" id="search-input" placeholder="Search for music...">
+                    <button id="search-button">Search</button>
+                    <ul id="search-results">
+                        </ul>
+                </div>
+            
+                <div id="create-playlist" style="display: none;">
+                    <h3>Create Wedding Playlist</h3>
+                    <input type="text" id="playlist-name" placeholder="Playlist Name">
+                    <button id="create-playlist-button">Create</button>
+                </div>
+            
+              </section>
+            </div>
+        </div>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Amazing experience!" - John Doe</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Highly recommend!" - Jane Smith</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Perfect wedding!" - Peter Jones</p>
+            </div>
+        </div>
+    
+        <hr>
+    </main> 
+    
+    <footer>
+        <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    
+    </footer>
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+    
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+    </script>
+    <script src="scripts/common.js"></script>
+    </body>
+    </html>
