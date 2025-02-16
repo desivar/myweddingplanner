@@ -13,11 +13,6 @@ header {
     width: 100%; /* Make sure header spans the entire width */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 /* Main Styles */
 main {
@@ -30,7 +25,7 @@ main {
 /* Image Slider Styles */
 .image-slider {
     position: relative;
-    width: 80%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     height: 600px; /* Set a specific height for the slider */
     margin: 0 auto;
     overflow: hidden;
@@ -54,9 +49,14 @@ main {
 /* Invitation/Timeline Styles */
 .invitation-timeline {
     display: flex;
+
     gap: 20px;
     width: 80%;
-    margin: 40px auto; /* Increased margin for spacing */
+    margin: 40px auto;
+    border-radius: 9px;
+    
+    
+     /* Increased margin for spacing */
 }
 
 /* Testimonial Styles */
@@ -71,7 +71,7 @@ main {
     flex: 1;
     border: 1px solid #ccc;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px 150px;
 }
 
 /* common.css */

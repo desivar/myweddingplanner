@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-    
 <body>
     <header>
         <div class="container"> 
@@ -34,12 +33,10 @@
                     <li><a href="/services.html">Services</a></li>
                     <li><a href="/vendors.html">Vendors</a></li>
                     <li><a href="/blog.html">Blog</a></li>
-                    
                 </ul>
             </nav>
         </div> 
     </header>
-    
     <main>
         <div class="image-slider">
             <img src="images/pinkglass2.jpg" alt="Wedding 1" class="active">
@@ -48,74 +45,195 @@
             <img src="images/chandelier2.jpg" alt="Wedding 4">
             <img src="images/cakew2.jpg" alt="Wedding 5">
         </div>
-        <div class="invitation-timeline">
-            <div class="invitation">
-                <img src="images/weddinginv2.jpg" alt="Wedding Invitation">
-            </div>
-            <section id="wedding-music">
-                <h2>Choose Your Wedding Music</h2>
-            
-                <div id="spotify-connect">
-                  <button id="connect-spotify">Connect with Spotify</button>
-                  <p id="spotify-status">Not connected</p> </div>
-            
-                <div id="playlist-selection" style="display: none;">
-                  <h3>Your Spotify Playlists</h3>
-                  <ul id="playlist-list">
-                    </ul>
-            
-                  <h3>Selected Tracks</h3>
-                  <ul id="selected-tracks">
-                    </ul>
-                </div>
-            
-                <div id="music-search" style="display: none;">
-                    <h3>Search Music</h3>
-                    <input type="text" id="search-input" placeholder="Search for music...">
-                    <button id="search-button">Search</button>
-                    <ul id="search-results">
-                        </ul>
-                </div>
-            
-                <div id="create-playlist" style="display: none;">
-                    <h3>Create Wedding Playlist</h3>
-                    <input type="text" id="playlist-name" placeholder="Playlist Name">
-                    <button id="create-playlist-button">Create</button>
-                </div>
-            
-              </section>
-            </div>
-        </div>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <p>"Amazing experience!" - John Doe</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Highly recommend!" - Jane Smith</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Perfect wedding!" - Peter Jones</p>
-            </div>
-        </div>
-    
         <hr>
-    </main> 
-    
-    <footer>
-        <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    
-    </footer>
-    
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mainNav = document.querySelector('.main-nav');
-    
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            mainNav.classList.toggle('active');
-        });
-    </script>
-    <script src="scripts/common.js"></script>
-    </body>
-    </html>
+        <h2>No matter the weather, we help you make the perfect wedding for you</h2>
+        <div class="portfolio-content">
+            <div class="seasons">
+                <div class="season">
+                    <img src="images/summer.jpg" alt="Summer">
+                    <p>Summer</p>
+                </div>
+                <div class="season">
+                    <img src="images/autumn.jpg" alt="Autumn">
+                    <p>Autumn</p>
+                </div>
+                <div class="season">
+                    <img src="images/winter.jpg" alt="Winter">
+                    <p>Winter</p>
+                </div>
+                <div class="season">
+                    <img src="images/spring.jpg" alt="Spring">
+                    <p>Spring</p>
+                </div>
+            </div>
+            <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="weather-container">
+                    <div class="container" id="wrapper">
+                        <div class="container-fluid" id="current-weather">
+                            <div class="row">
+                                <!-- Right panel -->
+                                <div class="col-md-4 col-sm-5">
+                                    <h5>
+                                        <span id="cityName"></span>, <span id="cityCode"></span>
+                                    </h5>
+                                    <h6 id="localDate"></h6>
+                                    <h5 id="localTime"></h5>
+                                    <a id="refreshButton" href="#"><i class="fa fa-refresh fa-fw" aria-hidden="true"></i> Refresh</a>
+                                </div>
+                                <!-- Center panel -->
+                                <div class="col-md-5 col-sm-7" style="margin: 10px auto;padding:0;">
+                                    <div class="row">
+                                        <i class="wi" id="main-icon" style="font-size: 85px;"></i>
+                                        <div>
+                                            <span id="mainTemperature"></span>
+                                            <p id="tempDescription"></p>
+                                        </div>
+                                        <p style="font-size: 1.5rem;"><a href="#" class="active" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a></p>
+                                    </div>
+                                </div>
+                                <!-- Left panel -->
+                                <div class="col-xs-12 col-sm-12 col-md-3 row" style="text-align: right;">
+                                    <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                                        <h6>Humidity: <span id="humidity"></span>%</h6>
+                                    </div>
+                                    <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                                        <h6>Wind: <span id="wind"></span> m/s</h6>
+                                    </div>
+                                    <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                                        <h6>High: <span id="mainTempHot"></span>°</h6>
+                                    </div>
+                                    <div class="col-md-12 col-sm-3 col-xs-3 side-weather-info">
+                                        <h6>Low: <span id="mainTempLow"></span>°</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="protocol-modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Due to weather api restrictions, data can only be shown via HTTP request.</p>
+                                        <p>Sorry for the inconvenience.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 days forecast -->
+                        <div class="container-fluid">
+                            <div class="row" style="padding: 2px;">
+                                <!-- Day 1 -->
+                                <div class="col-md-3 col-sm-6 day-weather-box">
+                                    <div class="col-sm-12 day-weather-inner-box">
+                                        <div class="col-sm-8 forecast-main">
+                                            <p id="forecast-day-1-name"></p>
+                                            <div class="row">
+                                                <h5 id="forecast-day-1-main">°</h5>
+                                                <i class="wi forecast-icon" id="forecast-day-1-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 forecast-min-low">
+                                            <p>
+                                                <span class="high-temperature" id="forecast-day-1-ht"></span>
+                                            </p>
+                                            <p>
+                                                <span class="low-temperature" id="forecast-day-1-lt"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Day 2 -->
+                                <div class="col-md-3 col-sm-6 day-weather-box">
+                                    <div class="col-sm-12 day-weather-inner-box">
+                                        <div class="col-sm-8 forecast-main">
+                                            <p id="forecast-day-2-name"></p>
+                                            <div class="row">
+                                                <h5 id="forecast-day-2-main">°</h5>
+                                                <i class="wi forecast-icon" id="forecast-day-2-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 forecast-min-low">
+                                            <p>
+                                                <span class="high-temperature" id="forecast-day-2-ht"></span>
+                                            </p>
+                                            <p>
+                                                <span class="low-temperature" id="forecast-day-2-lt"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Day 3 -->
+                                <div class="col-md-3 col-sm-6 day-weather-box">
+                                    <div class="col-sm-12 day-weather-inner-box">
+                                        <div class="col-sm-8 forecast-main">
+                                            <p id="forecast-day-3-name"></p>
+                                            <div class="row">
+                                                <h5 id="forecast-day-3-main">°</h5>
+                                                <i class="wi forecast-icon" id="forecast-day-3-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 forecast-min-low">
+                                            <p>
+                                                <span class="high-temperature" id="forecast-day-3-ht"></span>
+                                            </p>
+                                            <p>
+                                              <spam class="low-temperature" id="forecast-day-3-lt"></spam>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
+                                      <!-- Day 4 -->
+                                      <div class="col-md-3 col-sm-6 day-weather-box">
+                                        <div class="col-sm-12 day-weather-inner-box">
+                                          <div class="col-sm-8 forecast-main">
+                                            <p id="forecast-day-4-name"></p>
+                                            <div class="row">
+                                              <h5 id="forecast-day-4-main">°</h5>
+                                              <i class="wi forecast-icon" id="forecast-day-4-icon"></i>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4 forecast-min-low">
+                                            <p>
+                                              <spam class="high-temperature" id="forecast-day-4-ht"></spam>
+                                            </p>
+                                            <p>
+                                              <spam class="low-temperature" id="forecast-day-4-lt"></spam>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+                </main>
+
+
+
+                                                <footer>
+                                                    <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
+                                                    <p>Last Modification: <span id="lastModified"></span></p>
+                                            
+                                                </footer>
+                                                <script>
+                                                    const menuToggle = document.querySelector('.menu-toggle');
+                                                    const mainNav = document.querySelector('.main-nav');
+                                            
+                                                    menuToggle.addEventListener('click', () => {
+                                                        menuToggle.classList.toggle('active');
+                                                        mainNav.classList.toggle('active');
+                                                    });
+                                                </script>
+                                            <script src="scripts/common.js"></script> </body>
+                                            </body>
+                                            </html>
+                                                                             
