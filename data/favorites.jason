@@ -4,7 +4,7 @@ const data = [
     "address": "example",
     "phone": "0000 0000",
     "website": "https://adhoccatering.com/",
-    "image": "images/cathering2.jpg"
+    "image": "images/cathering.png"
   },
   {
     "name": "Floral Gallery",
@@ -18,14 +18,14 @@ const data = [
     "address": "example",
     "phone": " 0000-0000",
     "website": "https://www.hitchedinfrance.com/",
-    "image": "images/venuecasti.jpg"
+    "image": "images/venuecast.png"
   },
   {
     "name": "Bogdan Chrircan",
     "address": "example",
     "phone": "0000 0000",
     "website": "https://bogdanchircan.com/",
-    "image": "images/photow.jpg"
+    "image": "images/photow.png"
   },
   {
     "name": "Royal Wedding Car",

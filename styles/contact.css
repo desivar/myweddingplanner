@@ -1,0 +1,84 @@
+/* Contact Page Styles */
+.contact-page {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Space form and info evenly */
+    padding: 40px;
+}
+
+.contact-form-container {
+    flex: 1 1 50%; /* Take up about half the width */
+    padding: 20px;
+    border: 1px solid #eee; /* Light border */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for contrast */
+}
+
+.contact-info {
+    flex: 1 1 40%; /* Take up slightly less than half the width */
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.contact-page h2, .contact-info h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color5); /* Use your theme color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; /* Place labels above inputs */
+    margin-bottom: 5px;
+    color: var(--color5);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.submit-button {
+    background-color: var(--color2); /* Use your theme color */
+    color: var(--color5);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.submit-button:hover {
+    background-color: var(--color3); /* Slightly darker color on hover */
+}
+
+.map-container {
+    /* Style for your map (if you embed one) */
+    height: 300px; /* Adjust as needed */
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+    .contact-page {
+        flex-direction: column; /* Stack form and info vertically */
+    }
+
+    .contact-form-container,
+    .contact-info {
+        flex: 1 1 100%; /* Take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
