@@ -1,22 +1,22 @@
 /* Contact Page Styles */
 .contact-page {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: space-between; /* Space form and info evenly */
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 40px;
 }
 
 .contact-form-container {
-    flex: 1 1 50%; /* Take up about half the width */
+    flex: 1 1 50%;
     padding: 20px;
-    border: 1px solid #eee; /* Light border */
+    border: 1px solid #eee;
     border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background-color: #fff; /* White background for contrast */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 .contact-info {
-    flex: 1 1 40%; /* Take up slightly less than half the width */
+    flex: 1 1 40%;
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 8px;
@@ -27,7 +27,7 @@
 .contact-page h2, .contact-info h3 {
     text-align: center;
     margin-bottom: 20px;
-    color: var(--color5); /* Use your theme color */
+    color: var(--color5);
 }
 
 .form-group {
@@ -35,7 +35,7 @@
 }
 
 .form-group label {
-    display: block; /* Place labels above inputs */
+    display: block;
     margin-bottom: 5px;
     color: var(--color5);
 }
@@ -46,39 +46,54 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
 }
 
 .submit-button {
-    background-color: var(--color2); /* Use your theme color */
+    background-color: var(--color2);
     color: var(--color5);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: var(--color3); /* Slightly darker color on hover */
+    background-color: var(--color3);
 }
 
 .map-container {
-    /* Style for your map (if you embed one) */
-    height: 300px; /* Adjust as needed */
+    height: 300px;
     margin-top: 20px;
     border: 1px solid #ccc;
 }
 
-/* Responsive adjustments (example) */
+/* Status Message Styles */
+#statusMessage {
+    margin-top: 10px; /* Space from the button */
+    font-weight: bold;
+    text-align: center; /* Center the message */
+}
+
+#statusMessage.success {
+    color: green;
+}
+
+#statusMessage.error {
+    color: red;
+}
+
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-page {
-        flex-direction: column; /* Stack form and info vertically */
+        flex-direction: column;
     }
 
     .contact-form-container,
     .contact-info {
-        flex: 1 1 100%; /* Take full width on smaller screens */
+        flex: 1 1 100%;
         margin-bottom: 20px;
     }
 }
