@@ -4,7 +4,7 @@ const data = [ // This is already a JavaScript array, no need to parse!
       "address": "example",
       "phone": "0000 0000",
       "website": "https://adhoccatering.com/",
-      "image": "images/catering.png"
+      "image": "images/adhoc.png"
   },
   {
       "name": "Floral Gallery",
@@ -18,14 +18,14 @@ const data = [ // This is already a JavaScript array, no need to parse!
       "address": "example",
       "phone": "0000-0000",
       "website": "https://www.hitchedinfrance.com/",
-      "image": "images/venuescast.png"
+      "image": "images/venuesca.png"
   },
   {
       "name": "Bogdan Chrircan",
       "address": "example",
       "phone": "0000 0000",
       "website": "https://bogdanchircan.com/",
-      "image": "images/phorowe.png"
+      "image": "images/boran.png"
   },
   {
       "name": "Royal Wedding Car",
