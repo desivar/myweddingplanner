@@ -61,7 +61,22 @@
       </form>
     </section>
   </main>
+  <hr>
+  <footer>
+      <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
 
+  </footer>
+  <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mainNav = document.querySelector('.main-nav');
+
+      menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active');
+          mainNav.classList.toggle('active');
+      });
+  </script>
+<script src="scripts/common.js"></script> </body>
   <script>
     const form = document.getElementById('contactForm');
     const statusMessage = document.getElementById('statusMessage');
