@@ -1,13 +1,4 @@
-/* Basic Styles */
-:root {
-    --color1: #D8E2DC; /* Off-white/light beige */
-    --color2: #FFE5D9; /* Light peach/blush */
-    --color3: #FFCAD4; /* Light rose/pink */
-    --color4: #F4ACB7; /* Rose/pink */
-    --color5: #9D8189; /* Muted brown/taupe */
-    --font-serif: 'Playfair Display', serif; /* Example serif font */
-    --font-sans: 'Open Sans', sans-serif; /* Example sans-serif font */
-}
+
 
 body {
     font-family: var(--font-sans);
@@ -122,5 +113,5 @@ h1 {
     display: inline-block;
     margin-top: 1em;
     text-decoration: none;
-    color: #007BFF;
+    color: #00ffcc;
 }

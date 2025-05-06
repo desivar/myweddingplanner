@@ -1,13 +1,4 @@
 /* Basic Styles */
-:root {
-  --color1: #D8E2DC;
-  --color2: #FFE5D9;
-  --color3: #FFCAD4;
-  --color4: #F4ACB7;
-  --color5: #9D8189;
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Open Sans', sans-serif;
-}
 
 body {
   font-family: var(--font-sans);
