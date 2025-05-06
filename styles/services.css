@@ -133,11 +133,3 @@
 #membership-form input[type="submit"]:hover {
     background-color: var(--color3);
 }
-/* Footer Styles */
-footer {
-    background-color: var(--color2);
-    color: var(--color5);
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-  }
