@@ -1,9 +1,9 @@
 /* Basic Styles */
 :root {
     --color1: #c3ecd3; /* Off-white/light beige */
-    --color2: #31ad90; /* Light peach/blush */
-    --color3: #f894a6; /* Light rose/pink */
-    --color4: #e0a0aa; /* Rose/pink */
+    --color2: #bfeab3; /* Light peach/blush */
+    --color3: #f4b0bd; /* Light rose/pink */
+    --color4: #e3bed3; /* Rose/pink */
     --color5: #654e55; /* Muted brown/taupe */
     --font-serif: 'Playfair Display', serif; /* Example serif font */
     --font-sans: 'Open Sans', sans-serif; /* Example sans-serif font */
@@ -68,3 +68,11 @@ nav a {
 nav a:hover {
     color: var(--color3);
 }
+/* Footer Styles */
+footer {
+    background-color: var(--color2);
+    color: var(--color5);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }
