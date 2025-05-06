@@ -101,9 +101,9 @@
     padding: 15px 30px; /* Adjust padding as needed */
     font-size: 1.2em; /* Adjust font size as needed */
     text-decoration: none; /* Remove underline from link */
-    color: #F4ACB7; /* Pink text color (adjust as needed) */
+    color: #f89caa; /* Pink text color (adjust as needed) */
     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    border: 2px solid #F4ACB7; /* Pink border */
+    border: 2px solid #91656b; /* Pink border */
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -114,6 +114,13 @@
     color: #9D8189; /* Darker pink color on hover */
     border-color: #9D8189;
 }
-
+ /* Footer Styles */
+footer {
+    background-color: var(--color2);
+    color: var(--color5);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }
 
 

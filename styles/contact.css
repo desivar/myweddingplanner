@@ -4,24 +4,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px;
+    max-width: 1200px; /* Added max-width to contain the form */
+    margin: 0 auto; /* Center the contact page */
 }
 
 .contact-form-container {
-    flex: 1 1 50%;
+    flex: 1 1 48%; /* Changed from 50% to 48% to account for spacing */
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin-right: 2%; /* Added margin for spacing */
 }
 
 .contact-info {
-    flex: 1 1 40%;
+    flex: 1 1 38%; /* Changed from 40% to 38% to account for spacing */
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin-left: 2%; /* Added margin for spacing */
 }
 
 .contact-page h2, .contact-info h3 {
@@ -40,8 +44,7 @@
     color: var(--color5);
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -67,6 +70,8 @@
     height: 300px;
     margin-top: 20px;
     border: 1px solid #ccc;
+    border-radius: 5px; /* Added for consistency */
+    overflow: hidden; /* Ensures the map doesn't overflow the container */
 }
 
 /* Status Message Styles */
@@ -84,16 +89,16 @@
     color: red;
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-page {
         flex-direction: column;
+        padding: 20px; /* Reduced padding for mobile */
     }
-
+    
     .contact-form-container,
     .contact-info {
         flex: 1 1 100%;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0; /* Reset margins and add bottom margin */
     }
 }
