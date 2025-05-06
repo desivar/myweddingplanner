@@ -145,14 +145,7 @@ main {
 }
 
 
-/* Footer Styles */
-footer {
-  background-color: var(--color2);
-  color: var(--color5);
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
-}
+
 
 /* Media Queries */
 @media (max-width: 992px) {
