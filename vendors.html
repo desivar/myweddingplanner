@@ -9,7 +9,7 @@
     <meta name="author" content="Desire Vargas">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/vendors.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +44,23 @@
             <h1>Our Preferred Vendors</h1>
             <div id="card-container"></div>
          </main>
+         <hr>
+         <footer>
+             <p>©<span id="year"></span> 🌸Desire Vargas 🌸 Honduras</p>
+             <p>Last Modification: <span id="lastModified"></span></p>
+     
+         </footer>
+         <script>
+             const menuToggle = document.querySelector('.menu-toggle');
+             const mainNav = document.querySelector('.main-nav');
+     
+             menuToggle.addEventListener('click', () => {
+                 menuToggle.classList.toggle('active');
+                 mainNav.classList.toggle('active');
+             });
+         </script>
+     <script src="scripts/common.js"></script> </body>
+     
          <script src="scripts/vendors.js" defer></script>  </body>
  </body>
 </html>
