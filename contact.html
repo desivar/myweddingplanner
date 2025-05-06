@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌸Your Wedding Planner - French Country Style🌸</title>
-    <meta name="description" content="Creating unforgettable weddings with a touch of French elegance.">
-    <meta name="keywords" content="wedding, planner, French, country, style, elegant, unforgettable">
-    <meta name="author" content="Desire Vargas">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | 🌸Your Wedding Planner - French Country Style🌸</title>
+  <meta name="description" content="Get in touch to start planning your elegant French country wedding.">
+  <meta name="keywords" content="wedding contact, planner, French, country, elegant">
+  <meta name="author" content="Desire Vargas">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/greenlogo3.png" alt="Your Logo">
-            </div>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/vendors.html">Vendors</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/greenlogo3.png" alt="Your Logo">
+      </div>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/vendors.html">Vendors</a></li>
+          <li><a href="/contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
         </div>
-    </header>
+        <div class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        </div>
 
-    <!DOCTYPE html>
-<html>
-<head>
-    <h1>Contact Us</h1>
+        <button type="submit">Send</button>
+        <div id="statusMessage"></div>
+      </form>
+    </section>
+  </main>
 
-<form id="contactForm">
-  <div class="form-group">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-  </div>
-    <div class="form-group">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-  </div>
-    <div class="form-group">
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-  </div>
+  <script>
+    const form = document.getElementById('contactForm');
+    const statusMessage = document.getElementById('statusMessage');
 
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-  <button type="submit">Send</button>
+      statusMessage.textContent = "Sending...";
+      statusMessage.classList.remove("success", "error");
 
-  <div id="statusMessage"></div>
-</form>
+      setTimeout(() => {
+        const success = Math.random() < 0.8;
 
-<script>
-  const form = document.getElementById('contactForm');
-  const statusMessage = document.getElementById('statusMessage');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    statusMessage.textContent = "Sending...";
-    statusMessage.classList.remove("success", "error"); // Clear previous classes
-
-    setTimeout(() => {
-      const success = Math.random() < 0.8; // 80% chance of success (for demo)
-
-      if (success) {
-        statusMessage.textContent = "Message sent successfully!";
-        statusMessage.classList.add("success");
-        form.reset();
-      } else {
-        statusMessage.textContent = "Error sending message. Please try again.";
-        statusMessage.classList.add("error");
-      }
-    }, 2000); // Simulate 2-second delay
-  });
-</script>
-
+        if (success) {
+          statusMessage.textContent = "Message sent successfully!";
+          statusMessage.classList.add("success");
+          form.reset();
+        } else {
+          statusMessage.textContent = "Error sending message. Please try again.";
+          statusMessage.classList.add("error");
+        }
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
